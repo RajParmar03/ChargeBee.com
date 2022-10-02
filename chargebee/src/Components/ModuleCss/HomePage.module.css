@@ -1,0 +1,30 @@
+body {
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+.slider {
+	height: 50px;
+	margin: auto;
+	overflow:hidden;
+	position: relative;
+	width: 60%;
+    background: linear-gradient(90deg,#fff 0,rgba(255,255,255,0) 100%);
+    z-index: 1;
+    border-radius: 20px;
+}
+
+.slideTrack {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+}
+.slide {
+    height: 10px;
+    width: 800px;
+}
